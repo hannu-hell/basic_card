@@ -135,14 +135,14 @@ def compare_cards(c1, c2):
 
 #------------------------------------------------------------------------------
 
-def match_card(i, x, y):
+def match_card(surface, i, x, y):
     k = 0
     j = 0
     for s in suits:
         if i.suit == s:
             for v in values:
                 if i.value == v:
-                    win.blit(card_images[j][k], (x, y))
+                    surface.blit(card_images[j][k], (x, y))
                 if k <= 12:
                     k += 1
         if j <= 3:

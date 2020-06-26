@@ -7,7 +7,7 @@ This module is for anyone who is interested in creating  their own card game.  T
 
 - compare_cards(c1, c2) : Takes two arguments of which both are instances of the Card object. Returns the highest value of the card.  'A', 'K', 'Q' and so on are deemed highest in that order. Feel free to modify according to your needs.
 
-- match_card(i, x, y): Takes three arguments. 'i' refers to the instance of the Card object. 'x' refers to the x coordinate and 'y' refers to the y coordinate the card should be blitted on the screen.  x and y starts from the top left corner of the screen.
+- match_card(surface, i, x, y): Takes four arguments. 'surface' refers to the surface obejct in pygame where the card should be blitted. i' refers to the instance of the Card object. 'x' refers to the x coordinate and 'y' refers to the y coordinate the card should be blitted on the screen.  x and y starts from the top left corner of the screen.
 
 - have_suits(hand, s): Takes two arguments where 'hand' refers to a hand which is a list object with instances of the Card object. 's' refers to the suit which is a string ('hearts', 'clubs', 'spades', 'diamonds'). Returns a boolean of either True if have and False if not.
 
